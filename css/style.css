@@ -41,6 +41,12 @@ body {
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: .5s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
 .logo {
@@ -54,9 +60,13 @@ body {
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: #9BCDD2;
     font-weight: 500;
     margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a {
+    color: var(--text-color);
 }
 
 .navbar a.active::before {
@@ -254,5 +264,31 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
 }
+
+.about-img img {
+    width: 40vw;
+    margin-right: 4rem;
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align:center;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
 /* icons */
