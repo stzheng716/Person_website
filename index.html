@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <!-- box icons CDN -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -83,14 +86,15 @@
 
   <!-- about section design -->
   <section class="about" id="about">
-    <div class="about-img" >
+    <div class="about-img">
       <img src="images/aboutme.png" id="aboutphoto" alt="">
     </div>
 
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
       <h3>Hi, I am here to help you build cool stuff</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio, veritatis, voluptates eos reiciendis et eum voluptas explicabo modi nulla vel expedita magni laudantium vitae obcaecati quos corporis? Aut, sunt.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio, veritatis, voluptates eos reiciendis et
+        eum voluptas explicabo modi nulla vel expedita magni laudantium vitae obcaecati quos corporis? Aut, sunt.</p>
       <a href="#" class="btn">Read More</a>
     </div>
   </section>
@@ -122,15 +126,81 @@
   </section>
 
   <!-- portfolio section design -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2 class="heading">Lastest <span>Project</span></h2>
 
     <div class="portfolio-container">
       <div class="portfolio-box">
-        <img src="" alt="">
+        <img src="images/Warbler.png" alt="">
+
+        <div class="portfolio-layer">
+          <h4>Warbler</h4>
+          <p>This was a twitter clone, that is a multiple page application with the flask framework </p>
+          <a href="https://stzheng716-warbler.onrender.com/"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Jobly.png" alt="">
+
+        <div class="portfolio-layer">
+          <h4>Jobly</h4>
+          <p>Job application website, this is a single page application has a React frontend and Node.js backend </p>
+          <a href="http://jobly-linkedin.surge.sh/profile"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/YelpCamp.png" alt="">
+
+        <div class="portfolio-layer">
+          <h4>YelpCamp</h4>
+          <p>This application allows users to rate campsites, that is a multiple page application built with express and
+            MonogoDB as the database </p>
+          <a href="http://jobly-linkedin.surge.sh/profile"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/sharebnb.png" alt="">
+
+        <div class="portfolio-layer">
+          <h4>ShareBnB</h4>
+          <p>This is a airBnB clone, this is a single page application has a React frontend and Flask Backend </p>
+          <a href="http://jobly-linkedin.surge.sh/profile"><i class='bx bx-link-external'></i></a>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- testimonial design -->
+  <div class="testimonial-container">
+    <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+    <div class="testimonal-wrapper">
+      <div class="testimonial-box swiper mySwiper">
+        <div class="testimonial-content swiper-wrapper">
+
+          <div class="testimonial-slide swiper-slide">
+            <img src="images/Jane.jpeg" alt="">
+            <h3>Jennifer Horton</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci modi rem non repellat et
+              incidunt, esse eos laudantium culpa, tenetur eligendi ullam. Odit quo ut odio at nisi distinctio.</p>
+          </div>
+
+          <div class="testimonial-slide swiper-slide">
+            <img src="images/john.jpg" alt="">
+            <h3>John Smith</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci modi rem non repellat et
+              incidunt, esse eos laudantium culpa, tenetur eligendi ullam. Odit quo ut odio at nisi distinctio.</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- custom js -->
   <script src="js/script.js"></script>
