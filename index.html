@@ -31,6 +31,8 @@
     </nav>
 
     <div class="bx bx-moon" id="darkMode-icon"></div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
   </header>
 
   <!-- home section design -->
@@ -71,11 +73,11 @@
           <i class='bx bxl-typescript'></i>
           <h3>TypeScript</h3>
         </div>
-
         <div class="circle"></div>
-      </div>
 
+      </div>
       <div class="overlay"></div>
+
       <div class="home-img">
         <img src="images/Steven.png" alt="">
       </div>
@@ -175,7 +177,7 @@
     <h2 class="heading">Valuable <span>Testimonial</span></h2>
 
     <div class="testimonal-wrapper">
-      <div class="testimonial-box swiper mySwiper">
+      <div class="testimonial-box swiper mySwiper" id="swiper">
         <div class="testimonial-content swiper-wrapper">
 
           <div class="testimonial-slide swiper-slide">
@@ -198,6 +200,40 @@
       </div>
     </div>
   </div>
+
+
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Steven Zheng | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+    </div>
+  </footer>
+
+  <!-- scroll reveal -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
