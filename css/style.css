@@ -40,7 +40,7 @@
 } */
 
 .dark-mode {
-    --bg-color: #0b061f;
+    --bg-color: #0a1129;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, 0.7);
 }
@@ -637,6 +637,14 @@ span {
     font-size: 2.4rem;
     color: #333;
 }
+
+/* #logo {
+    width: 100%;
+}
+
+.logo {
+    width: 10%
+} */
 
 /* BREAKPOINTS */
 
