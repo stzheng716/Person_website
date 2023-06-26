@@ -13,13 +13,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
+/* original theme */
+/* :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
     --main-color: #754ef9;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, 0.2);
+} */
+
+/* green and gold theme*/
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #4C4C6D;
+    --main-color: #1B9C85;
+    --white-color: #FFE194;
+    --shadow-color: rgba(0,0,0, 0.2);
 }
+
+/* :root {
+    --bg-color: #F8F4EA;
+    --text-color: #4C4C6D;
+    --main-color: #579BB1;
+    --white-color: #E1D7C6;
+    --shadow-color: rgba(0,0,0, 0.2);
+} */
 
 .dark-mode {
     --bg-color: #0b061f;
@@ -246,8 +264,8 @@ section {
     margin-right: 15px;
 }
 
-.home .profession-box .profession:nth-child(2),
-.home .profession-box .profession:nth-child(4) {
+.home .profession-box .profession:nth-child(2) i,
+.home .profession-box .profession:nth-child(4) i {
     padding-bottom: 20px;
 }
 
@@ -284,7 +302,7 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 56.2%;
+    width: 49.2%;
     pointer-events: none;
 }
 
@@ -657,8 +675,10 @@ span {
 }
 
 @media (max-width: 1024px) {
+
     .header {
         padding: 2rem 3%;
+        width: 100vw;
     }
 
     .home-img img {
@@ -695,7 +715,7 @@ span {
     }
 
     .home .profession-container .profession-box {
-        right: -45rem;
+        right: -50rem;
     }
 
     .home .profession-container .overlay {
@@ -810,6 +830,7 @@ span {
 
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-120px, -210px);
+        padding: 0 23px;
     } 
 
     .home .profession-box .profession:nth-child(1) i {
@@ -822,10 +843,12 @@ span {
 
     .home .profession-box .profession:nth-child(3) {
         transform: rotate(90deg) translate(-115px, -450px);
+        padding: 0 28px;
     } 
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-220px, -355px);
+        padding: 0 39px;
     } 
 
     .home .profession-container .overlay {
@@ -897,6 +920,10 @@ span {
         font-size: 50%;
     }
 
+    .circle {
+        display: none;
+    }
+
     .home .profession-container .profession-box {
         top: 73%;
     }
@@ -925,7 +952,7 @@ span {
         transform: rotate(90deg) translate(-105px, -440px);
     }
 
-    .home .portfolio-box .profession:nth-child(3) {
+    .home .portfolio-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-210px, -335px);
     }
 
@@ -965,7 +992,7 @@ span {
     }
 
     .home .profession-container .overlay {
-        top: 9rem;
+        top: 90rem;
     }
 
     .footer {
@@ -977,3 +1004,4 @@ span {
         margin-top: 2rem;
     }
 }
+
