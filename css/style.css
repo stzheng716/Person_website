@@ -648,7 +648,18 @@ span {
 
 /* BREAKPOINTS */
 
-@media (min-height: 836px) {
+@media (max-height: 836px) {
+    .home .profession-container {
+        height: 100%;
+    }
+
+    .home .profession-container .overlay {
+        border-top: 50vh solid var(--main-color);
+        border-bottom: 50vh solid var(--main-color);
+    }
+}
+
+@media (min-height: 856px) {   
     .navbar a {
         color: var(--main-color);
     }
