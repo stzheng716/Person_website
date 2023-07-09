@@ -651,8 +651,7 @@ span {
 } */
 
 /* BREAKPOINTS */
-/* fix this breakpoint */
-/* @media (max-height: 836px) {
+@media (max-height: 836px) {
     .home .profession-container {
         height: 100%;
     }
@@ -661,9 +660,13 @@ span {
         border-top: 50vh solid var(--main-color);
         border-bottom: 50vh solid var(--main-color);
     }
+
+    .home .profession-container .profession-box {
+        height: 100%;
+    }
 }
 
-@media (min-height: 856px) {   
+/* @media (min-height: 856px) {   
     .navbar a {
         color: var(--main-color);
     }
