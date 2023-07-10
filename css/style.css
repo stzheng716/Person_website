@@ -651,7 +651,7 @@ span {
 } */
 
 /* BREAKPOINTS */
-@media (max-height: 836px) {
+@media (max-height: 890px) {
     .home .profession-container {
         height: 100%;
     }
