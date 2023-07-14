@@ -99,12 +99,12 @@
       <h3>Hi, I am here to help you build cool stuff</h3>
       <p>I'm a passionate and dynamic software engineer, driven by a genuine love for the intricacies of technology.
         With a background in product management, I bring a unique blend of leadership skills and technical expertise to
-        the table. I thrive in the ever-evolving landscape of software engineering, always eager to embrace new
+        the table. I thrive in the ever-evolving landscape of software engineering, <span id="dots">...</span><span id="more">always eager to embrace new
         technologies and continuously expand my knowledge. My experience has taught me the importance of clear
         communication, empathy, and fostering collaborative teamwork. When faced with challenges, I dive in headfirst,
         fueled by an insatiable curiosity and a determination to make a meaningful impact. Let's connect and explore the
-        exciting possibilities where we can create remarkable solutions together.</p>
-      <a href="#" class="btn">Read More</a>
+        exciting possibilities where we can create remarkable solutions together.</span></p>
+      <a id="readMoreBtn" onclick="readMore()" class="btn">Read More</a>
     </div>
   </section>
 
@@ -163,7 +163,7 @@
       <div class="portfolio-box">
         <img src="images/YelpCamp.jpg" alt="">
 
-        <div class="portfolio-layer">
+        <div class="portfolio-layer" id="yelpCamp">
           <h4>YelpCamp</h4>
           <p>This application allows users to rate campsites, that is a multiple page application built with express and
             MonogoDB as the database </p>

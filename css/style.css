@@ -459,6 +459,10 @@ span {
     transition: .5 ease;
 }
 
+#yelpCamp {
+    background: linear-gradient(rgba(0, 0, 0, 0.93), var(--main-color));
+}
+
 .portfolio-layer .portfolio-link {
     flex-direction: row;
 }
@@ -642,13 +646,11 @@ span {
     color: #333;
 }
 
-/* #logo {
-    width: 100%;
+#more {
+    display: none;
+    color: var(--text-color);
 }
 
-.logo {
-    width: 10%
-} */
 
 /* BREAKPOINTS */
 @media (max-height: 890px) {
