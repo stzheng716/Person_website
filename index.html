@@ -355,16 +355,16 @@
     <h2 class="heading">Contact <span>Me!</span></h2>
 
     <form name="contact" method="POST" data-netlify="true" onSubmit="submit"
-      data-netlify-honeypot="bot-field" action="#contact"
+      data-netlify-honeypot="bot-field" action="thankyou.html"
     >
       <input name="bot-field" style="display: none;">
       <div class="input-box">
-        <input type="text" placeholder="Full Name" name="name">
-        <input type="email" placeholder="Email Address" name="email">
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email Address" name="email" required>
       </div>
       <div class="input-box">
         <input type="number" placeholder="Mobile Number" name="number">
-        <input type="text" placeholder="Email Subject" name="subject">
+        <input type="text" placeholder="Email Subject" name="subject" required>
       </div>
       <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
       <button type="submit" value="Send Message" class="btn">Submit</button>
