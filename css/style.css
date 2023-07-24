@@ -356,6 +356,7 @@ span {
     margin: 2rem 0 3rem;
 }
 
+
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
@@ -390,9 +391,21 @@ span {
     transform: scale(1.02);
 }
 
+.skills .skills-list {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.skills .skill-point {
+    display:flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
 .skills-box i {
-    font-size: 7rem;
+    font-size: 4rem;
     color: var(--main-color);
+    margin-left: 2rem;
 }
 
 .skills-box h3 {
@@ -651,6 +664,21 @@ span {
     color: var(--text-color);
 }
 
+#skillsList1 {
+    display: none;
+    color: var(--text-color);
+}
+
+#skillsList2 {
+    display: none;
+    color: var(--text-color);
+}
+
+
+#skillsList3 {
+    display: none;
+    color: var(--text-color);
+}
 
 /* BREAKPOINTS */
 @media (max-height: 890px) {

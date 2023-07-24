@@ -67,8 +67,8 @@ darkModeIcon.onclick = () => {
 };
 
 /*=============== scroll reveal ===============*/
-ScrollReveal({ 
-    reset: true ,
+ScrollReveal({
+    reset: true,
     distance: '10px',
     duration: 1700,
     delay: 200
@@ -85,14 +85,59 @@ function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("readMoreBtn");
-  
+
     if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+
+/*=============== show more front ===============*/
+
+function showMore1() {
+    let list = document.getElementById("skillsList1");
+    let showBtn = document.getElementById("readMoreBtn1");
+
+    if (list.style.display === "none") {
+        list.style.display = "inline";
+        showBtn.innerHTML = "Show less";
+    } else {
+        list.style.display = "none";
+        showBtn.innerHTML = "Show skills";
+    }
+}
+
+/*=============== show more back ===============*/
+
+function showMore2() {
+    let list = document.getElementById("skillsList2");
+    let showBtn = document.getElementById("readMoreBtn2");
+
+    if (list.style.display === "none") {
+        list.style.display = "inline";
+        showBtn.innerHTML = "Show less";
+    } else {
+        list.style.display = "none";
+        showBtn.innerHTML = "Show skills";
+    }
+}
+
+/*=============== show more team ===============*/
+
+function showMore3() {
+    let list = document.getElementById("skillsList3");
+    let showBtn = document.getElementById("readMoreBtn3");
+
+    if (list.style.display === "none") {
+        list.style.display = "inline";
+        showBtn.innerHTML = "Show less";
+    } else {
+        list.style.display = "none";
+        showBtn.innerHTML = "Show skills";
     }
 }

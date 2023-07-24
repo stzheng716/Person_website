@@ -52,7 +52,7 @@
         <a href="https://github.com/stzheng716" target="_blank"><i class='bx bxl-github'></i></a>
       </div>
 
-      <a download="steven_zheng_resume" href="resume/sz_resume.pdf" target="_blank" class="btn">View Resume</a>
+      <a href="resume/sz_resume.pdf" target="_blank" class="btn">View Resume</a>
     </div>
 
     <div class="profession-container">
@@ -99,16 +99,19 @@
       <h3>Hi, I am here to help you build cool stuff</h3>
       <p>I'm a passionate and dynamic software engineer, driven by a genuine love for the intricacies of technology.
         With a background in product management, I bring a unique blend of leadership skills and technical expertise to
-        the table. I thrive in the ever-evolving landscape of software engineering, <span id="dots">...</span><span id="more">always eager to embrace new
-        technologies and continuously expand my knowledge. My experience has taught me the importance of clear
-        communication, empathy, and fostering collaborative teamwork. When faced with challenges, I dive in headfirst,
-        fueled by an insatiable curiosity and a determination to make a meaningful impact. Let's connect and explore the
-        exciting possibilities where we can create remarkable solutions together.</span></p>
+        the table. I thrive in the ever-evolving landscape of software engineering, <span id="dots">...</span><span
+          id="more">always eager to embrace new
+          technologies and continuously expand my knowledge. My experience has taught me the importance of clear
+          communication, empathy, and fostering collaborative teamwork. When faced with challenges, I dive in headfirst,
+          fueled by an insatiable curiosity and a determination to make a meaningful impact. Let's connect and explore
+          the
+          exciting possibilities where we can create remarkable solutions together.</span></p>
       <a id="readMoreBtn" onclick="readMore()" class="btn">Read More</a>
     </div>
   </section>
 
   <!-- skills section design -->
+
   <section class="skills" id="skill">
     <h2 class="heading">My <span>skills</span></h2>
 
@@ -117,19 +120,97 @@
         <i class='bx bx-code-curly'></i>
         <h3>Frontend</h3>
         <p>languages & libraries</p>
-        <a href="#" class="btn">Show more</a>
+        <ul class="skills-list" id="skillsList1">
+          <div class="skill-point">
+            <li>React</li>
+            <i class='bx bxl-react'></i>
+          </div>
+          <div class="skill-point">
+            <li>HTML5</li>
+            <i class='bx bxl-html5' ></i>
+          </div>
+          <div class="skill-point">
+            <li>CSS</li>
+            <i class='bx bxl-css3' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Javascript</li>
+            <i class='bx bxl-javascript' ></i>
+          </div>
+          <div class="skill-point">
+            <li>jQuery</li>
+            <i class='bx bxl-jquery' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Git</li>
+            <i class='bx bxl-git' ></i>
+          </div>
+        </ul>
+        <a onclick="showMore1()" class="btn" id="readMoreBtn1">Show skills</a>
       </div>
       <div class="skills-box">
         <i class='bx bx-server'></i>
         <h3>Backend</h3>
         <p>languages, frameworks, & databases</p>
-        <a href="#" class="btn">Show more</a>
+        <ul class="skills-list" id="skillsList2">
+          <div class="skill-point">
+            <li>Python</li>
+            <i class='bx bxl-python' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Flask</li>
+            <i class='bx bxl-flask' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Node.js</li>
+            <i class='bx bxl-nodejs' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Django</li>
+            <i class='bx bxl-django' ></i>
+          </div>
+          <div class="skill-point">
+            <li>SQL | SQLAlchemy</li>
+            <i class='bx bxl-postgresql' ></i>
+          </div>
+          <div class="skill-point">
+            <li>MongoDB</li>
+            <i class='bx bxl-mongodb' ></i>
+          </div>
+        </ul>
+        <a onclick="showMore2()" class="btn" id="readMoreBtn2">Show skills</a>
       </div>
       <div class="skills-box">
         <i class='bx bx-group'></i>
         <h3>Collaboration</h3>
         <p>strength & experiences</p>
-        <a href="#" class="btn">Show more</a>
+        <ul class="skills-list" id="skillsList3">
+          <div class="skill-point">
+            <li>Leadership</li>
+            <i class='bx bx-link' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Strategy and Planning</li>
+            <i class='bx bx-trip'></i>
+          </div>
+          <div class="skill-point">
+            <li>communication</li>
+            <i class='bx bx-chat' ></i>
+          </div>
+          <div class="skill-point">
+            <li>Automation</li>
+            <i class='bx bxs-vector'></i>
+          </div>
+          <div class="skill-point">
+            <li>Customer Service</li>
+            <i class='bx bxs-donate-heart'></i>
+          </div>
+          <div class="skill-point">
+            <li>Team Player</li>
+            <i class='bx bx-group'></i>
+          </div>
+        </ul>
+        <a onclick="showMore3()" class="btn" id="readMoreBtn3">Show skills</a>
       </div>
     </div>
   </section>
@@ -145,7 +226,10 @@
         <div class="portfolio-layer">
           <h4>Warbler</h4>
           <p>This was a twitter clone, that is a multiple page application with the flask framework </p>
-          <a href="https://stzheng716-warbler.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+          <div class="portfolio-link">
+            <a href="https://stzheng716-warbler.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+            <a href="https://github.com/stzheng716/Flask_warbler" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
       </div>
       <div class="portfolio-box">
@@ -155,7 +239,7 @@
           <h4>Jobly</h4>
           <p>Job application website, this is a single page application has a React frontend and Node.js backend </p>
           <div class="portfolio-link">
-            <a href="http://jobly-linkedin.surge.sh/profile" target="_blank"><i class='bx bx-link-external'></i></a>
+            <a href="https://jobly.stevenzheng.dev/" target="_blank"><i class='bx bx-link-external'></i></a>
             <a href="https://github.com/stzheng716/express-jobly" target="_blank"><i class='bx bxl-github'></i></a>
           </div>
         </div>
@@ -167,7 +251,10 @@
           <h4>YelpCamp</h4>
           <p>This application allows users to rate campsites, that is a multiple page application built with express and
             MonogoDB as the database </p>
-          <a href="https://campyelp2.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+          <div class="portfolio-link">
+            <a href="https://campyelp2.onrender.com/" target="_blank"><i class='bx bx-link-external'></i></a>
+            <a href="https://github.com/stzheng716/CampYelp" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
       </div>
       <div class="portfolio-box">
@@ -176,7 +263,10 @@
         <div class="portfolio-layer">
           <h4>ShareBnB</h4>
           <p>This is a airBnB clone, this is a single page application has a React frontend and Flask Backend </p>
-          <a href="http://jobly-linkedin.surge.sh/profile" target="_blank"><i class='bx bx-link-external'></i></a>
+          <div class="portfolio-link">
+            <a href="https://sharebnb.stevenzheng.dev/" target="_blank"><i class='bx bx-link-external'></i></a>
+            <a href="https://github.com/stzheng716/sharebnb-frontend" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
       </div>
     </div>
