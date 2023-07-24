@@ -680,6 +680,10 @@ span {
     display: inline-block;
 }
 
+.thankyou a {
+    color: var(--text-color)
+}
+
 /* BREAKPOINTS */
 @media (max-height: 890px) {
     .home .profession-container {
