@@ -102,7 +102,7 @@ function readMore() {
 function showMore1() {
     let list = document.getElementById("skillsList1");
     let showBtn = document.getElementById("readMoreBtn1");
-
+    
     if (list.style.display === "none") {
         list.style.display = "inline";
         showBtn.innerHTML = "Show less";

@@ -669,15 +669,15 @@ span {
     color: var(--text-color);
 }
 
-#skillsList2 {
-    display: none;
-    color: var(--text-color);
-}
-
 
 #skillsList3 {
     display: none;
     color: var(--text-color);
+}
+
+#arrow1 {
+    margin: 0;
+    display: inline-block;
 }
 
 /* BREAKPOINTS */
