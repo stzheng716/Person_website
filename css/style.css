@@ -460,20 +460,20 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), var(--main-color));
     color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
     opacity: 0;
     transition: .5 ease;
 }
 
 #yelpCamp {
-    background: linear-gradient(rgba(0, 0, 0, 0.93), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.85), var(--main-color));
 }
 
 .portfolio-layer .portfolio-link {
@@ -682,6 +682,11 @@ span {
 
 .thankyou a {
     color: var(--text-color)
+}
+
+.demo_account {
+    color: rgb(246, 90, 90);
+    display: block;
 }
 
 /* BREAKPOINTS */
