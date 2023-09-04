@@ -82,19 +82,17 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 /*=============== read more ===============*/
 
 function readMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMoreBtn");
+    const moreText = document.getElementById("more");
+    const btnText = document.getElementById("readMoreBtn");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
+    if (moreText.style.display !== "none") {
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
     } else {
-        dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
     }
+    console.log("display", moreText)
 }
 
 /*=============== show more front ===============*/
